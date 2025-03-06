@@ -8,6 +8,14 @@ export default function Home() {
         <LoginForm />
         <LoginFooter />
       </div>
+
+      <div className="w-1/2 text-left self-start mt-[210px]">
+        <h1 className="text-7xl font-extrabold text-[#3F2E91] drop-shadow-lg leading-tight">
+          Dashboard <br />
+          Keluarga <br />
+          Jakarta
+        </h1>
+      </div>
     </main>
   );
 }
