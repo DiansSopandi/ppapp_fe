@@ -51,7 +51,7 @@ export const LoginForm = () => {
             name="username"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="block text-left text-indigo-600">
+                <FormLabel className="block text-left text-xs text-indigo-600">
                   Username
                 </FormLabel>
                 <FormControl>
@@ -71,7 +71,7 @@ export const LoginForm = () => {
             name="password"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="block text-left text-indigo-400">
+                <FormLabel className="block text-left text-xs text-indigo-400">
                   Password
                 </FormLabel>
                 <FormControl>
@@ -99,19 +99,19 @@ export const LoginForm = () => {
         </div>
         <FormError message={error || urlError} />
         <FormSuccess message={success} />
-        <div className="flex space-x-4 mt-4">
+        <div className="flex justify-between space-x-4 mt-4">
           <Button
             type="submit"
-            className="bg-indigo-400 text-white w-full py-2 rounded-md hover:bg-blue-700"
+            className="h-6 bg-indigo-400 text-white text-xs  py-2 rounded-md hover:bg-blue-700"
             disabled={isPending}
           >
             LOGIN
           </Button>
-          <Button className="bg-white-300 text-gray-700 w-full py-2 rounded-md hover:bg-gray-400">
+          <Button className="h-6 bg-white-300 text-gray-700 text-xs  py-2 rounded-md hover:bg-gray-400">
             REGISTRASI
           </Button>
         </div>
-        <p className="text-left text-sm text-indigo-400 mt-4 hover:underline cursor-pointer">
+        <p className="text-left text-xs text-indigo-400 mt-4 hover:underline cursor-pointer">
           Lupa Password?
         </p>
       </Form>
