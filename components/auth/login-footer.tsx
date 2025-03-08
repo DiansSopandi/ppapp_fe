@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export const LoginFooter = () => {
   return (
-    <div className="bg-white shadow-md rounded-lg p-4 flex flex-col items-center mt-4 w-full max-w-sm">
-      <div className="flex justify-between space-x-4">
+    <div className="bg-white shadow-md rounded-lg p-4 flex flex-col items-center mt-4 w-full">
+      <div className="flex justify-between space-x-4 w-full">
         <Image
           src="/images/bkkbn.jpg"
           alt="Carik Jakarta"

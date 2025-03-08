@@ -3,7 +3,6 @@ import React from "react";
 const DashboardContent = () => {
   return (
     <div>
-      {/* Dashboard Cards */}
       <h1 className="text-center font-bold text-2xl m-3 p-3">
         Pendataan Keluarga Satu Pintu
       </h1>
