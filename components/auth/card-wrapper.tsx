@@ -27,8 +27,10 @@ export const CardWrapper = ({
       <CardContent>{children}</CardContent>
       {showSocial && <CardFooter>{/* <Social /> */}</CardFooter>}
       <CardFooter>
-        <ArrowLeft size={16} className="mr-2" />
-        <BackButton href={backButtonHref} label={backButtonLabel} />
+        <div className="flex justify-items-center">
+          <ArrowLeft size={16} className="ml-20 mt-2" />
+          <BackButton href={backButtonHref} label={backButtonLabel} />
+        </div>
       </CardFooter>
     </Card>
   );

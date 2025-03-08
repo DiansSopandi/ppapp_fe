@@ -8,23 +8,26 @@ export const LoginFooter = () => {
           src="/images/bkkbn.jpg"
           alt="Carik Jakarta"
           width={70}
-          height={50}
+          height={70}
+          className="h-12 object-contain"
         />
         <Image
           src="/images/crkOne.jpeg"
           alt="Carik Jakarta"
-          width={60}
+          width={90}
           height={50}
+          className="h-10 object-contain"
         />
         <img
           src="/images/logo-sim-pkk-header.svg"
           alt="SimPKK"
           width={90}
-          height={50}
+          height={20}
+          className="h-10 object-contain"
         />
       </div>
-      <p className="text-xs text-gray-500 mt-2">
-        Bidang Keluarga Berencana & Carik Jakarta
+      <p className="text-left text-xs text-gray-500">
+        <span className="font-extrabold">SIGA</span> - Sistem Informasi Keluarga
       </p>
     </div>
   );
