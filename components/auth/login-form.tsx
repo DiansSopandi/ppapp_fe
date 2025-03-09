@@ -126,7 +126,10 @@ export const LoginForm = () => {
               <span className="mr-3"> LOGIN</span>
               <Lock size={10} />
             </Button>
-            <Button className="h-7 bg-white-300 text-indigo-500 border-2 border-indigo-500 text-xs  font-montserrat py-3 px-3 rounded-sm hover:bg-indigo-400 hover:text-white transition-all">
+            <Button
+              type="button"
+              className="h-7 bg-white-300 text-indigo-500 border-2 border-indigo-500 text-xs  font-montserrat py-3 px-3 rounded-sm hover:bg-indigo-400 hover:text-white transition-all"
+            >
               REGISTRASI
             </Button>
           </div>
