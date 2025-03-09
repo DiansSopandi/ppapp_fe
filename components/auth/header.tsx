@@ -13,9 +13,14 @@ interface HeaderProps {
 
 export const Header = ({ label }: HeaderProps) => {
   return (
-    <div className="w-full flex flex-col gap-y-4 items-center justify-center">
+    <div className="w-full flex flex-col gap-y-4 items-center justify-center font-montserrat">
       <DashboardHeaderImages />
-      <h1 className={cn("text-indigo-400 text-xs text-left ", font.className)}>
+      <h1
+        className={cn(
+          "text-indigo-400 text-xs text-left font-montserrat",
+          font.className
+        )}
+      >
         Mohon masukan <span className="italic">username</span> dan
         <span className="italic">password</span> anda untuk mengakses dashboard
       </h1>

@@ -64,14 +64,12 @@ const DashboardSidebar = () => {
           <SidebarLink href="#" label="User Management" icon={faUser} />
         </nav>
 
-        <div className="mt-auto pt-10">
+        <Link href="/" className="mt-auto pt-10">
           <button className="px-4 py-3 w-full bg-gray-800 hover:bg-gray-900 transition rounded-md text-center">
-            <Link href="/">
-              <FontAwesomeIcon icon={faSignOutAlt} className="w-4 h-4 mr-4" />
-              Keluar
-            </Link>
+            <FontAwesomeIcon icon={faSignOutAlt} className="w-4 h-4 mr-4" />
+            Keluar
           </button>
-        </div>
+        </Link>
       </div>
     </div>
   );

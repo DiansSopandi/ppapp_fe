@@ -3,23 +3,25 @@ import React from "react";
 const DashboardContent = () => {
   return (
     <div>
-      <h1 className="text-center font-bold text-2xl m-3 p-3">
+      <h1 className="text-center font-medium text-2xl m-3 p-3 font-montserrat">
         Pendataan Keluarga Satu Pintu
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {DASHBOARD_ITEMS.map((item, index: number) => (
           <div
             key={index}
-            className="bg-white p-4 rounded-xl shadow-md hover:shadow-lg transition cursor-pointer"
+            className="bg-white p-5 rounded-xl shadow-md hover:shadow-lg transition cursor-pointer text-xs"
           >
             <div className="flex items-center space-x-4">
               <div className="bg-purple-200 p-3 rounded-full">{item.icon}</div>
               <div>
-                <h3 className="font-semibold text-lg">{item.title}</h3>
-                <p className="text-sm text-gray-500">{item.description}</p>
+                <h3 className="font-semibold text-base">{item.title}</h3>
+                <p className="text-xs text-gray-500 truncate w-60 ">
+                  {item.description}
+                </p>
               </div>
             </div>
-            <p className="mt-3 text-blue-600 text-sm font-medium">
+            <p className="mt-3 text-blue-600 text-xs font-medium">
               Selengkapnya →
             </p>
           </div>

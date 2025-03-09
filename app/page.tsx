@@ -10,7 +10,7 @@ export default function Home() {
       </div>
 
       <div className="w-1/2 text-left self-start mt-[210px] ml-40">
-        <h1 className="text-7xl font-extrabold text-[#3F2E91] drop-shadow-lg leading-tight">
+        <h1 className="text-7xl font-extrabold text-[#3F2E91] drop-shadow-[4px_4px_0px_#FACC15] leading-tight">
           Dashboard <br />
           Keluarga <br />
           Jakarta

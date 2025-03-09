@@ -120,13 +120,13 @@ export const LoginForm = () => {
           <div className="flex justify-between space-x-4 mt-4">
             <Button
               type="submit"
-              className="h-6 bg-indigo-400 text-white text-xs  py-3 rounded-lg hover:bg-blue-700"
+              className="h-7 bg-indigo-400 text-white text-xs  font-montserrat py-3 rounded-lg hover:bg-blue-700"
               disabled={isPending}
             >
               <span className="mr-3"> LOGIN</span>
               <Lock size={10} />
             </Button>
-            <Button className="h-6 bg-white-300 text-gray-700 border-2 border-indigo-500 text-xs  py-3 px-3 rounded-sm hover:bg-indigo-400 hover:text-white transition-all">
+            <Button className="h-7 bg-white-300 text-indigo-500 border-2 border-indigo-500 text-xs  font-montserrat py-3 px-3 rounded-sm hover:bg-indigo-400 hover:text-white transition-all">
               REGISTRASI
             </Button>
           </div>

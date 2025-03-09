@@ -25,7 +25,7 @@ const DashboardHeader = () => {
   return (
     <FormProvider {...form}>
       <div className="flex flex-col items-start w-full mb-7 ">
-        <h1 className="text-xs font-bold text-gray-900 mb-6 flex items-center gap-2">
+        <h1 className="text-xs font-medium text-gray-900 mb-6 flex items-center gap-2">
           <FontAwesomeIcon icon={faFolder} className="text-gray-700" />
           Pendataan Keluarga Satu Pintu
         </h1>
@@ -45,7 +45,7 @@ const DashboardHeader = () => {
                     disabled={isPending}
                     placeholder="User / Dashboard"
                     type="text"
-                    className="w-full bg-gray-100 text-gray-300 text-sm rounded-lg px-4 py-2 shadow-sm border-none focus:ring-2 focus:ring-indigo-200"
+                    className="w-full bg-gray-100 text-gray-300 text-xs rounded-lg px-4 py-2 shadow-sm border-none focus:ring-2 focus:ring-indigo-200"
                   />
                 </FormControl>
                 <FormMessage />
