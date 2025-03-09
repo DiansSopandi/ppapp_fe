@@ -66,8 +66,10 @@ const DashboardSidebar = () => {
 
         <div className="mt-auto pt-10">
           <button className="px-4 py-3 w-full bg-gray-800 hover:bg-gray-900 transition rounded-md text-center">
-            <FontAwesomeIcon icon={faSignOutAlt} className="w-4 h-4 mr-4" />
-            Keluar
+            <Link href="/">
+              <FontAwesomeIcon icon={faSignOutAlt} className="w-4 h-4 mr-4" />
+              Keluar
+            </Link>
           </button>
         </div>
       </div>
