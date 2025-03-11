@@ -23,16 +23,16 @@ const DashboardHeader = () => {
 
     switch (path) {
       case "/dashboard":
-        return "User / Dashboard";
+        return "User → Dashboard";
       case "/katalog":
-        return "User / Katalog";
+        return "User → Katalog";
       case "/standard":
-        return "User / Standard Data";
+        return "User → Standard Data";
       case "/user-management":
-        return "User / User Management";
+        return "User → User Management";
 
       default:
-        return "User / Dashboard";
+        return "User → Dashboard";
     }
   };
 
