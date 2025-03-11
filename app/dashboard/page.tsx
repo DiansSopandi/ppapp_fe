@@ -1,10 +1,10 @@
 import React from "react";
-import DashboardWrapper from "./dashboard-wrapper";
+import DashboardContent from "@/components/dashboard/content";
 
 const DashboardPage = ({ children }: { children: React.ReactNode }) => {
   return (
     <div>
-      <DashboardWrapper> {children} </DashboardWrapper>
+      <DashboardContent />
     </div>
   );
 };
