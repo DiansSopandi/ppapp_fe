@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
 import DashboardHeaderImages from "../auth/header-images";
@@ -10,6 +12,7 @@ import {
   faSignOutAlt,
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
+import { usePathname } from "next/navigation";
 
 const SidebarLink = ({
   href,
@@ -22,11 +25,17 @@ const SidebarLink = ({
   icon: any;
   active?: boolean;
 }) => {
+  const pathname = usePathname();
+  const isActive =
+    pathname === href || (pathname === "/" && href === "/dashboard");
+
   return (
     <Link
       href={href}
       className={`px-4 py-3 block rounded-md text-sm font-medium ${
-        active ? "bg-red-500" : "hover:bg-indigo-600 transition"
+        isActive
+          ? "bg-red-500"
+          : "hover:bg-indigo-200 hover:text-black transition"
       }`}
     >
       <FontAwesomeIcon icon={icon} className="w-4 h-4 mr-4" />
@@ -58,10 +67,22 @@ const DashboardSidebar = () => {
         </div>
 
         <nav className="flex flex-col space-y-2">
-          <SidebarLink href="#" label="BNBA" icon={faHome} active />
-          <SidebarLink href="#" label="Katalog" icon={faHome} />
-          <SidebarLink href="#" label="Standar Data" icon={faBox} />
-          <SidebarLink href="#" label="User Management" icon={faUser} />
+          <SidebarLink href="/dashboard" label="BNBA" icon={faHome} active />
+          <SidebarLink
+            href="/dashboard/katalog"
+            label="Katalog"
+            icon={faHome}
+          />
+          <SidebarLink
+            href="/dashboard/standard"
+            label="Standard Data"
+            icon={faBox}
+          />
+          <SidebarLink
+            href="/dashboard/user-management"
+            label="User Management"
+            icon={faUser}
+          />
         </nav>
 
         <Link href="/" className="mt-auto pt-10">

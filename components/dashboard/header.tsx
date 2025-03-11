@@ -12,13 +12,33 @@ import { Input } from "@/components/ui/input";
 import { FormProvider, useForm } from "react-hook-form";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFolder } from "@fortawesome/free-solid-svg-icons";
+import { usePathname } from "next/navigation";
 
 const DashboardHeader = () => {
   const [isPending, starTransition] = useTransition();
+  const pathname = usePathname();
+
+  const getPlaceholder = () => {
+    const path = "/" + pathname.split("/").pop();
+
+    switch (path) {
+      case "/dashboard":
+        return "User / Dashboard";
+      case "/katalog":
+        return "User / Katalog";
+      case "/standard":
+        return "User / Standard Data";
+      case "/user-management":
+        return "User / User Management";
+
+      default:
+        return "User / Dashboard";
+    }
+  };
 
   const form = useForm({
     defaultValues: {
-      search: "User / Dashboard",
+      search: "",
     },
   });
 
@@ -43,7 +63,7 @@ const DashboardHeader = () => {
                   <Input
                     {...field}
                     disabled={isPending}
-                    placeholder="User / Dashboard"
+                    placeholder={getPlaceholder()}
                     type="text"
                     className="w-full bg-gray-100 text-gray-300 text-xs rounded-lg px-4 py-2 shadow-sm border-none focus:ring-2 focus:ring-indigo-200"
                   />

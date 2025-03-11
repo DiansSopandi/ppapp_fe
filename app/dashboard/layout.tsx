@@ -1,5 +1,5 @@
 import React from "react";
-import DashboardWrapper from "./dashboard-wrapper";
+import DashboardWrapper from "@/app/dashboard/dashboard-wrapper";
 
 const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
   return (
